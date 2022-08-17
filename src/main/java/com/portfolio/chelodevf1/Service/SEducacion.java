@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.chelodevf1.Service;
 
 import com.portfolio.chelodevf1.Entity.Educacion;
@@ -27,7 +22,7 @@ public class SEducacion {
         return rEducacion.findById(id);
     }
     
-    public Optional<Educacion> getByNmbreE(String nombreE){
+    public Optional<Educacion> getByNombreE(String nombreE){
         return rEducacion.findByNombreE(nombreE);
     }
     

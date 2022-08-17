@@ -11,21 +11,21 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Educacion {
+public class Skill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nombreE;
-    private String descripcionE;
+    private String nombreS;
+    private int porcentajeS;
     
     //Constructores
 
-    public Educacion() {
+    public Skill() {
     }
 
-    public Educacion(String nombreE, String descripcionE) {
-        this.nombreE = nombreE;
-        this.descripcionE = descripcionE;
+    public Skill(String nombreS, int porcentajeS) {
+        this.nombreS = nombreS;
+        this.porcentajeS = porcentajeS;
     }
     
     //Getters and Setters
@@ -38,21 +38,22 @@ public class Educacion {
         this.id = id;
     }
 
-    public String getNombreE() {
-        return nombreE;
+    public String getNombreS() {
+        return nombreS;
     }
 
-    public void setNombreE(String nombreE) {
-        this.nombreE = nombreE;
+    public void setNombreS(String nombreS) {
+        this.nombreS = nombreS;
     }
 
-    public String getDescripcionE() {
-        return descripcionE;
+    public int getPorcentajeS() {
+        return porcentajeS;
     }
 
-    public void setDescripcionE(String descripcionE) {
-        this.descripcionE = descripcionE;
+    public void setPorcentajeS(int porcentajeS) {
+        this.porcentajeS = porcentajeS;
     }
+    
     
     
 }
