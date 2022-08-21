@@ -26,7 +26,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/proyectos")
-@CrossOrigin(origins = "http://localhost:4200")
+//Local
+//@CrossOrigin(origins = "http://localhost:4200")
+//Remoto
+@CrossOrigin(origins = "https://chelodevfront.web.app")
 public class CProyecto {
     @Autowired
     SProyecto sProyecto;
